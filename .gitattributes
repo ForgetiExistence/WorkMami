@@ -1,0 +1,40 @@
+# 默认：自动识别文本文件，仓库内与工作区统一使用 LF（\n），与原作者习惯保持一致。
+# 这样无论在 macOS、Linux 还是 Windows 上检出/提交，都不会再产生 CRLF↔LF 的"假 diff"。
+* text=auto eol=lf
+
+# —— 显式声明常见源码 / 配置文件为 LF ——
+*.rs       text eol=lf
+*.toml     text eol=lf
+*.json     text eol=lf
+*.ts       text eol=lf
+*.tsx      text eol=lf
+*.js       text eol=lf
+*.cjs      text eol=lf
+*.mjs      text eol=lf
+*.css      text eol=lf
+*.html     text eol=lf
+*.md       text eol=lf
+*.sh       text eol=lf
+*.ps1      text eol=lf
+*.yml      text eol=lf
+*.yaml     text eol=lf
+*.svg      text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
+
+# —— 二进制文件：不做行尾转换、不做行级 diff ——
+*.png      binary
+*.jpg      binary
+*.jpeg     binary
+*.gif      binary
+*.ico      binary
+*.icns     binary
+*.woff     binary
+*.woff2    binary
+*.ttf      binary
+*.eot      binary
+*.zip      binary
+*.exe      binary
+*.dll      binary
+*.dmg      binary
+*.pdb      binary
